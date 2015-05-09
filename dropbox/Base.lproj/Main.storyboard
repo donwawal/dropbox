@@ -55,7 +55,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="AqB-8b-lbL" kind="modal" id="790-gk-vBZ"/>
+                                            <segue destination="AqB-8b-lbL" kind="modal" animates="NO" id="790-gk-vBZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,30 +107,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fzg-zz-eJG">
-                                <rect key="frame" x="0.0" y="421" width="320" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KLJ-ma-JZP" kind="push" id="qZq-n2-UzK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r5k-2h-8jC">
-                                <rect key="frame" x="1" y="467" width="320" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mnC-pj-kAZ" kind="push" id="egG-id-gCj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oj5-r9-tRc"/>
+                    <connections>
+                        <segue destination="mnC-pj-kAZ" kind="push" identifier="signInSegue" id="uBF-mX-HBD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4q-j2-bIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -479,30 +462,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R8L-Uo-fsn">
-                                <rect key="frame" x="0.0" y="425" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KLJ-ma-JZP" kind="push" id="uct-bH-5ff"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fcj-eS-6XP">
-                                <rect key="frame" x="0.0" y="468" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mnC-pj-kAZ" kind="push" id="SIM-VZ-2dT"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="r3Q-z3-fFT"/>
+                    <connections>
+                        <segue destination="KLJ-ma-JZP" kind="push" identifier="createAccountSegue" id="Jce-af-cSJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4X-9u-R4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -745,11 +711,11 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="0Rp-qf-YLS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="Msb-oS-9Ja">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hCy-5K-kju">
                                         <rect key="frame" x="0.0" y="689" width="320" height="30"/>
@@ -910,11 +876,11 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="93I-GU-I5l">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_photos" id="Y2t-y6-to4">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
@@ -968,11 +934,11 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="HoA-8m-Gz8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="muI-yV-dc0">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NuD-zF-Hiq">
                                         <rect key="frame" x="20" y="711" width="320" height="43"/>
@@ -1114,11 +1080,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pQK-1Z-bdA"/>
-        <segue reference="D9H-3W-f5w"/>
-        <segue reference="qZq-n2-UzK"/>
-        <segue reference="egG-id-gCj"/>
+        <segue reference="HuY-yY-VS0"/>
+        <segue reference="LoZ-8k-Yba"/>
         <segue reference="tzT-tN-PR2"/>
+        <segue reference="Jce-af-cSJ"/>
         <segue reference="whs-0P-lCs"/>
     </inferredMetricsTieBreakers>
 </document>

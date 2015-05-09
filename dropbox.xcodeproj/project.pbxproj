@@ -11,7 +11,6 @@
 		8445B4091AF930E3000F7394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445B4081AF930E3000F7394 /* ViewController.swift */; };
 		8445B40C1AF930E3000F7394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8445B40A1AF930E3000F7394 /* Main.storyboard */; };
 		8445B40E1AF930E3000F7394 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8445B40D1AF930E3000F7394 /* Images.xcassets */; };
-		8445B4111AF930E3000F7394 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8445B40F1AF930E3000F7394 /* LaunchScreen.xib */; };
 		8445B41D1AF930E3000F7394 /* dropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445B41C1AF930E3000F7394 /* dropboxTests.swift */; };
 		8445B4271AF9E1AF000F7394 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445B4261AF9E1AF000F7394 /* CreateAccountRootViewController.swift */; };
 		8445B4291AF9E1CA000F7394 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445B4281AF9E1CA000F7394 /* SignInRootViewController.swift */; };
@@ -36,7 +35,6 @@
 		8445B4081AF930E3000F7394 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8445B40B1AF930E3000F7394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8445B40D1AF930E3000F7394 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8445B4101AF930E3000F7394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8445B4161AF930E3000F7394 /* dropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dropboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8445B41B1AF930E3000F7394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8445B41C1AF930E3000F7394 /* dropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropboxTests.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				8445B4081AF930E3000F7394 /* ViewController.swift */,
 				8445B40A1AF930E3000F7394 /* Main.storyboard */,
 				8445B40D1AF930E3000F7394 /* Images.xcassets */,
-				8445B40F1AF930E3000F7394 /* LaunchScreen.xib */,
 				8445B4041AF930E3000F7394 /* Supporting Files */,
 				8445B4261AF9E1AF000F7394 /* CreateAccountRootViewController.swift */,
 				8445B4281AF9E1CA000F7394 /* SignInRootViewController.swift */,
@@ -205,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8445B40C1AF930E3000F7394 /* Main.storyboard in Resources */,
-				8445B4111AF930E3000F7394 /* LaunchScreen.xib in Resources */,
 				8445B40E1AF930E3000F7394 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,14 +254,6 @@
 				8445B40B1AF930E3000F7394 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8445B40F1AF930E3000F7394 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8445B4101AF930E3000F7394 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +415,7 @@
 				8445B4221AF930E3000F7394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8445B4231AF930E3000F7394 /* Build configuration list for PBXNativeTarget "dropboxTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +424,7 @@
 				8445B4251AF930E3000F7394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
