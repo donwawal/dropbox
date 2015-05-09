@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var fileFavoritedButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
             , completion: nil)
     }
     
-
+    @IBAction func didSelectFavorite(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
 }
 
