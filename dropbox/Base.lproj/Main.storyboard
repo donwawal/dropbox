@@ -145,7 +145,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickedBackButton:" destination="mnC-pj-kAZ" eventType="touchUpInside" id="q9F-FE-FWf"/>
+                                    <action selector="clickedBackButton:" destination="mnC-pj-kAZ" eventType="touchUpInside" id="q8O-aO-gfZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="osD-yL-0Lj">
@@ -192,6 +192,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="lBf-wx-6O7" eventType="touchUpInside" id="q6h-58-zOr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ofx-vq-UX3">
                                 <rect key="frame" x="0.0" y="74" width="320" height="488"/>
@@ -237,6 +240,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="5cu-p7-W9o" eventType="touchUpInside" id="RZX-z6-efN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Ao-h0-6ZN">
                                 <rect key="frame" x="0.0" y="79" width="320" height="488"/>
@@ -282,6 +288,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="0pE-Gf-nQ2" eventType="touchUpInside" id="g1A-wp-toM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vLB-Ji-Klk">
                                 <rect key="frame" x="0.0" y="81" width="320" height="488"/>
@@ -327,6 +336,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="Go1-yh-iWY" eventType="touchUpInside" id="ooa-xx-NwI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RDj-7I-fX5">
                                 <rect key="frame" x="242" y="20" width="75" height="43"/>
@@ -486,16 +498,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tLP-q7-tvz">
-                                <rect key="frame" x="0.0" y="98" width="320" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hcY-83-6Gt" kind="modal" animates="NO" id="CPP-7f-lbz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PaA-jz-L1H">
                                 <rect key="frame" x="6" y="20" width="104" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -516,14 +518,34 @@
                                     <segue destination="HSP-zx-gxS" kind="modal" id="aeI-Vu-KTv"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" id="XHN-b1-fRf">
+                                <rect key="frame" x="116" y="106" width="198" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tLP-q7-tvz">
+                                <rect key="frame" x="-1" y="139" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hcY-83-6Gt" kind="modal" animates="NO" id="CPP-7f-lbz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IKk-7M-Zjb"/>
+                    <connections>
+                        <outlet property="emailField" destination="XHN-b1-fRf" id="6Wo-FQ-sz4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI3-OX-c6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="999.99999999999989"/>
+            <point key="canvasLocation" x="2270" y="999"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="LmN-JV-Jph">
@@ -567,14 +589,24 @@
                                     <segue destination="HSP-zx-gxS" kind="modal" animates="NO" id="whs-0P-lCs"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="cZ9-Xn-F1z">
+                                <rect key="frame" x="118" y="151" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YfI-Qf-0Bs"/>
+                    <connections>
+                        <outlet property="passwordField" destination="cZ9-Xn-F1z" id="CHC-Ix-Tft"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xfs-Yx-01z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2666" y="999.99999999999989"/>
+            <point key="canvasLocation" x="2666" y="999"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="YYT-8k-bzA">
@@ -724,7 +756,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="PiT-uP-a7o" kind="modal" id="HuY-yY-VS0"/>
+                                            <segue destination="AqB-8b-lbL" kind="modal" id="wIX-BC-74a"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -864,7 +896,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FFw-Of-JOm" kind="push" id="yYJ-Kf-Li4"/>
+                                    <segue destination="FFw-Of-JOm" kind="modal" animates="NO" id="yYJ-Kf-Li4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -920,7 +952,7 @@
         <!--Getting Started.pdf-->
         <scene sceneID="mLd-tw-Hz0">
             <objects>
-                <viewController id="FFw-Of-JOm" sceneMemberID="viewController">
+                <viewController id="FFw-Of-JOm" customClass="ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CHb-bm-LRG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -930,7 +962,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P9u-pG-y5L">
-                                <rect key="frame" x="273" y="25" width="30" height="30"/>
+                                <rect key="frame" x="231" y="0.0" width="89" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -939,12 +971,23 @@
                                     <segue destination="DSG-EY-ZmB" kind="modal" id="kAH-4H-xQ2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HWe-i2-mgj">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="FFw-Of-JOm" eventType="touchUpInside" id="5OL-Mn-pbN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Getting Started.pdf" id="2QP-AO-pNh">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="Xtt-YG-jEh"/>
                     </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -1113,6 +1156,16 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ujQ-6e-zsH">
+                                <rect key="frame" x="2" y="0.0" width="318" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedOnDone:" destination="DSG-EY-ZmB" eventType="touchUpInside" id="ceM-jN-Nzj"/>
+                                </connections>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="detail_menu" id="UMg-Ew-D9h">
                                 <rect key="frame" x="0.0" y="65" width="320" height="277"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1182,10 +1235,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HuY-yY-VS0"/>
-        <segue reference="LoZ-8k-Yba"/>
+        <segue reference="wIX-BC-74a"/>
         <segue reference="tzT-tN-PR2"/>
-        <segue reference="Jce-af-cSJ"/>
-        <segue reference="whs-0P-lCs"/>
+        <segue reference="tq4-Vu-kzg"/>
+        <segue reference="aeI-Vu-KTv"/>
     </inferredMetricsTieBreakers>
 </document>

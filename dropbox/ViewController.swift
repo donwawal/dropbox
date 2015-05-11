@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickedOnDone(sender: AnyObject) {
-        dismissViewControllerAnimated(true
+        dismissViewControllerAnimated(false
             , completion: nil)
     }
     

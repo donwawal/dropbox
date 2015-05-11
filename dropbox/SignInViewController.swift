@@ -10,10 +10,25 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if emailField != nil{
+        emailField.becomeFirstResponder()
+        }
+        if passwordField != nil{
+        passwordField.becomeFirstResponder()
+        }
     }
 
     override func didReceiveMemoryWarning() {
