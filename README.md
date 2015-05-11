@@ -15,7 +15,8 @@ Completed user stories:
  * [x] User can log out from the Settings screen.
  * [x] Optional: Add a detail view for one of the files and implement favoriting the file.
  * [x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
- * [ ] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
+ * [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
  * [ ] Optional: Auto-Layout
 
 Walkthrough of user stories:
+![Video walkthrough](https://s3.amazonaws.com/jules-codepath/jules_dropbox.gif)
